@@ -24,11 +24,6 @@ import { Provider } from "react-redux";
 // Make store that will be passed to the Redux component
 import {createStoreWithState} from "./redux/store.js";
 
-function ReduxStoreProvider() {
-  const store = createStore(reducers);
-  return <ReduxProvider store={store}></ReduxProvider>
-}
-
 const client = new ApolloClient({
   request: (operation) => {
     const token = localStorage.getItem('id_token')
