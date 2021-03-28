@@ -15,15 +15,7 @@ import Nav from "./components/Nav";
 import Success from "./pages/Success";
 import OrderHistory from "./pages/OrderHistory";
 
-/* Temporary: Context API 
- * I am converting Context API to Redux. Leaving this in for now to prevent breaking changes.
- */
-import { StoreProvider } from "./utils/GlobalState";
-
 /* Global State via Redux */
-// Weng: I choose not to create a store.js file because it's already too many abstractions and imports.
-// Instead of a store.js, I abstracted away into component ReduxStoreProvider which is a composition of ReduxProvider (aka Provider from react-redux). 
-// My unique approach to Redux will aid understanding without the complexity of more files.
 
 // Make Redux component. All its descendant components will have access to useDispatch
 import { Provider } from "react-redux";
@@ -63,7 +55,6 @@ function App() {
       <Router>
         <div>
             <Provider store={store}>
-            {/* <StoreProvider> */}
               <Nav />
               <Switch>
                 <Route exact path="/" component={Home} />
@@ -74,7 +65,6 @@ function App() {
                 <Route exact path="/products/:id" component={Detail} />
                 <Route component={NoMatch} />
               </Switch>
-            {/* </StoreProvider> */}
             </Provider>
         </div>
       </Router>
