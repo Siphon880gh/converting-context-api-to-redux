@@ -49,9 +49,6 @@ const client = new ApolloClient({
 })
 
 function App() {
-  /* Novel approach to Redux */
-  /* Weng: I refactored React Redux so that an initial state can be started in App component and passed as prop. I believe this is easier to understand */
-  const initialState = {};
   const store = createStoreWithState(initialState);
 
   return (
