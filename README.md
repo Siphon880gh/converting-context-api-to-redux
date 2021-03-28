@@ -36,4 +36,4 @@ Questions
 
 - Where can I reach you?
 	- You can reach me with additional questions at <a href='mailto:weffung@ucdavis.edu'>weffung@ucdavis.edu</a>.
-	- Want to [hire me](wengindustry.com)?
+	- Want to [hire me](//wengindustry.com)?
