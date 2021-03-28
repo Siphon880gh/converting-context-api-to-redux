@@ -1,5 +1,5 @@
 import {createStore} from "redux";
-import {reducer} from "../utils/reducers";
+import {reducer} from "../redux/reducers";
 
 
 // Create store with reducers and initial state
