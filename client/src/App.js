@@ -49,6 +49,13 @@ const client = new ApolloClient({
 })
 
 function App() {
+  const initialState = {
+    products: [],
+    cart: [],
+    cartOpen: false,
+    categories: [],
+    currentCategory: '',
+  };
   const store = createStoreWithState(initialState);
 
   return (
